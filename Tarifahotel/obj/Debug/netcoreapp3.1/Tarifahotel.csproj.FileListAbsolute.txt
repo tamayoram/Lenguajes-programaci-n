@@ -1,0 +1,22 @@
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.exe
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.deps.json
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.runtimeconfig.json
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.runtimeconfig.dev.json
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.dll
+C:\Users\311\Desktop\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.pdb
+C:\Users\311\Desktop\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.csprojAssemblyReference.cache
+C:\Users\311\Desktop\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.AssemblyInfoInputs.cache
+C:\Users\311\Desktop\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.AssemblyInfo.cs
+C:\Users\311\Desktop\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.dll
+C:\Users\311\Desktop\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.deps.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.runtimeconfig.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.runtimeconfig.dev.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\bin\Debug\netcoreapp3.1\Tarifahotel.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.csprojAssemblyReference.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.AssemblyInfoInputs.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.AssemblyInfo.cs
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Tarifahotel\obj\Debug\netcoreapp3.1\Tarifahotel.pdb

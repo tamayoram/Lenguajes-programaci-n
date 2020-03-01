@@ -1,0 +1,22 @@
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.exe
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.deps.json
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.runtimeconfig.json
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.runtimeconfig.dev.json
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.dll
+C:\Users\311\Desktop\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.pdb
+C:\Users\311\Desktop\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.csprojAssemblyReference.cache
+C:\Users\311\Desktop\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.AssemblyInfoInputs.cache
+C:\Users\311\Desktop\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.AssemblyInfo.cs
+C:\Users\311\Desktop\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.dll
+C:\Users\311\Desktop\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.deps.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.runtimeconfig.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.runtimeconfig.dev.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\bin\Debug\netcoreapp3.1\EjemploOOP2.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.csprojAssemblyReference.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.AssemblyInfoInputs.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.AssemblyInfo.cs
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\EjemploOOP2\obj\Debug\netcoreapp3.1\EjemploOOP2.pdb

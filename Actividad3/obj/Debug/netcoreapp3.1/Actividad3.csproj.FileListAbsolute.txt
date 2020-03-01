@@ -1,0 +1,11 @@
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.deps.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.runtimeconfig.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.runtimeconfig.dev.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\bin\Debug\netcoreapp3.1\Actividad3.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\obj\Debug\netcoreapp3.1\Actividad3.csprojAssemblyReference.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\obj\Debug\netcoreapp3.1\Actividad3.AssemblyInfoInputs.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\obj\Debug\netcoreapp3.1\Actividad3.AssemblyInfo.cs
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\obj\Debug\netcoreapp3.1\Actividad3.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Actividad3\obj\Debug\netcoreapp3.1\Actividad3.pdb
