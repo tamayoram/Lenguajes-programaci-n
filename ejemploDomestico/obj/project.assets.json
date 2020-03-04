@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\OperacionesAritmeticas_return\\OperacionesAritmeticas_return.csproj",
-      "projectName": "OperacionesAritmeticas_return",
-      "projectPath": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\OperacionesAritmeticas_return\\OperacionesAritmeticas_return.csproj",
+      "projectUniqueName": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\ejemploDomestico\\ejemploDomestico.csproj",
+      "projectName": "ejemploDomestico",
+      "projectPath": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\ejemploDomestico\\ejemploDomestico.csproj",
       "packagesPath": "C:\\Users\\311\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\OperacionesAritmeticas_return\\obj\\",
+      "outputPath": "C:\\Users\\311\\Desktop\\Lenguajes\\Lenguajes-programaci-n\\ejemploDomestico\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\311\\AppData\\Roaming\\NuGet\\NuGet.Config",

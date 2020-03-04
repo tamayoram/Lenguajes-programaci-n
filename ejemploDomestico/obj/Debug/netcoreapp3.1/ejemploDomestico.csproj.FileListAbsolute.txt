@@ -1,0 +1,11 @@
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.exe
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.deps.json
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.runtimeconfig.json
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.runtimeconfig.dev.json
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.dll
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\bin\Debug\netcoreapp3.1\ejemploDomestico.pdb
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\obj\Debug\netcoreapp3.1\ejemploDomestico.csprojAssemblyReference.cache
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\obj\Debug\netcoreapp3.1\ejemploDomestico.AssemblyInfoInputs.cache
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\obj\Debug\netcoreapp3.1\ejemploDomestico.AssemblyInfo.cs
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\obj\Debug\netcoreapp3.1\ejemploDomestico.dll
+C:\Users\311\Desktop\Lenguajes\Lenguajes-programaci-n\ejemploDomestico\obj\Debug\netcoreapp3.1\ejemploDomestico.pdb
