@@ -1,0 +1,11 @@
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.deps.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.runtimeconfig.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.runtimeconfig.dev.json
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\bin\Debug\netcoreapp3.1\Almacen.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\obj\Debug\netcoreapp3.1\Almacen.csprojAssemblyReference.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\obj\Debug\netcoreapp3.1\Almacen.AssemblyInfoInputs.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\obj\Debug\netcoreapp3.1\Almacen.AssemblyInfo.cs
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\obj\Debug\netcoreapp3.1\Almacen.dll
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Lenguajes-programaci-n\Almacen\obj\Debug\netcoreapp3.1\Almacen.pdb
