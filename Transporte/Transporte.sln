@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29806.167
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Presentacion", "Presentacion.csproj", "{7426F90C-6F3C-4D9D-BE15-0EAC07E25F4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Modelo", "..\Modelo\Modelo.csproj", "{8FC1080E-70F8-438E-98B0-7DC44A6F07FC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Negocio", "Negocio\Negocio.csproj", "{E46CC99F-80D7-4040-B0B7-21E2D54BE095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7426F90C-6F3C-4D9D-BE15-0EAC07E25F4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7426F90C-6F3C-4D9D-BE15-0EAC07E25F4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7426F90C-6F3C-4D9D-BE15-0EAC07E25F4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7426F90C-6F3C-4D9D-BE15-0EAC07E25F4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8FC1080E-70F8-438E-98B0-7DC44A6F07FC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8FC1080E-70F8-438E-98B0-7DC44A6F07FC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8FC1080E-70F8-438E-98B0-7DC44A6F07FC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8FC1080E-70F8-438E-98B0-7DC44A6F07FC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E46CC99F-80D7-4040-B0B7-21E2D54BE095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E46CC99F-80D7-4040-B0B7-21E2D54BE095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E46CC99F-80D7-4040-B0B7-21E2D54BE095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E46CC99F-80D7-4040-B0B7-21E2D54BE095}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E0421025-7F3F-4A3C-AF0C-C55717CCEE20}
+	EndGlobalSection
+EndGlobal

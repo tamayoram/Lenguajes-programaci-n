@@ -1,0 +1,10 @@
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Negocio.exe.config
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Negocio.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Negocio.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Modelo.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Modelo.pdb
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\bin\Debug\Modelo.exe.config
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\obj\Debug\Negocio.exe
+C:\Camilo\Desarollo software\nivel 2\Lenguajes\Transporte\Negocio\obj\Debug\Negocio.pdb
