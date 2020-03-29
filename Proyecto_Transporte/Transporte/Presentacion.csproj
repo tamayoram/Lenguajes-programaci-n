@@ -76,6 +76,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="gestionTipoConductorVehiculo.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -194,6 +195,13 @@
     </Compile>
     <Compile Include="addTransporte.aspx.designer.cs">
       <DependentUpon>addTransporte.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="gestionTipoConductorVehiculo.aspx.cs">
+      <DependentUpon>gestionTipoConductorVehiculo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="gestionTipoConductorVehiculo.aspx.designer.cs">
+      <DependentUpon>gestionTipoConductorVehiculo.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
