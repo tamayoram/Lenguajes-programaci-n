@@ -13,7 +13,11 @@ namespace Transporte
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+            if (!Page.IsPostBack) 
+            {
+                ListarTipoVehiculo_Click(sender, e);
+                ListarTipoConductor_Click(sender, e);
+            }
         }
 
         protected void InsertarTipoConductor_Click(object sender, EventArgs e)
