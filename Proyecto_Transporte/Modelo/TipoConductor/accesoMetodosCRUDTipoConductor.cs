@@ -30,5 +30,23 @@ namespace Modelo.TipoConductor
             return MetodosCRUDTipoConductor.EjecutarConsultarTipoConductor(_comandoTipoConductor);
         }
 
+        // Operación para actualizar datos
+        public int ActualizarTipoConductor(int Id, string nombre)
+        {
+            SqlCommand _comandoTipoConductor = MetodosCRUDTipoConductor.ActualizarTipoConductor();
+            _comandoTipoConductor.Parameters.AddWithValue("Id", Id);
+            _comandoTipoConductor.Parameters.AddWithValue("@nombre", nombre);
+
+            return MetodosCRUDTipoConductor.EjecutarActualizarTipoConductor(_comandoTipoConductor);
+        }
+
+        // Operación para eliminar datos
+        public int EliminarTipoConductor(int Id)
+        {
+            SqlCommand _comandoTipoConductor = MetodosCRUDTipoConductor.EliminarTipoConductor();
+            _comandoTipoConductor.Parameters.AddWithValue("Id", Id);
+            return MetodosCRUDTipoConductor.EjecutarEliminarTipoConductor(_comandoTipoConductor);
+        }
+
     }
 }

@@ -21,7 +21,7 @@ namespace Modelo.TipoConductor
 
         }
 
-        //Ejecución del comando que se creó en el método
+        //ejecución método que se creó para insertar
         public static int EjecutarInsertarTipoConductor(SqlCommand comandoTipoConductor)
         {
             try
@@ -37,7 +37,7 @@ namespace Modelo.TipoConductor
             }
         }
        
-        //Crear tipo comando forma consultar
+        //método para consultar datos
 
         public static SqlCommand ConsultarTipoConductor()
         {
@@ -54,7 +54,7 @@ namespace Modelo.TipoConductor
             
         }
 
-        // ejecutar tipo de comando consulta
+        //ejecución método que se creó para consultar
 
         public static DataTable EjecutarConsultarTipoConductor(SqlCommand comandoTipoConductor)
         {
@@ -80,6 +80,64 @@ namespace Modelo.TipoConductor
 
 
         }
+
+        //método para actualizar datos utilizando procedimientos almacenados
+
+        public static SqlCommand ActualizarTipoConductor()
+        {
+            string _cadenaConexionTipoConductor = configuracion.CadenaConexion;
+            SqlConnection _conexionTipoConductor = new SqlConnection(_cadenaConexionTipoConductor);
+            SqlCommand _comandoTipoConductor = new SqlCommand("actualizarTipoConductor", _conexionTipoConductor);
+            _comandoTipoConductor.CommandType = CommandType.StoredProcedure;
+            return _comandoTipoConductor;
+
+        }
+
+        //ejecución método que se creó para actualizar
+        public static int EjecutarActualizarTipoConductor(SqlCommand comandoTipoConductor)
+        {
+            try
+            {
+                comandoTipoConductor.Connection.Open();
+                return comandoTipoConductor.ExecuteNonQuery();
+            }
+            catch { throw; }
+            finally
+            {
+                comandoTipoConductor.Connection.Dispose();
+                comandoTipoConductor.Connection.Close();
+            }
+        }
+
+        //método para eliminar datos utilizando procedimientos almacenados
+
+        public static SqlCommand EliminarTipoConductor()
+        {
+            string _cadenaConexionTipoConductor = configuracion.CadenaConexion;
+            SqlConnection _conexionTipoConductor = new SqlConnection(_cadenaConexionTipoConductor);
+            SqlCommand _comandoTipoConductor = new SqlCommand("eliminarTipoConductor", _conexionTipoConductor);
+            _comandoTipoConductor.CommandType = CommandType.StoredProcedure;
+            return _comandoTipoConductor;
+
+        }
+
+        //ejecución método que se creó para eliminar
+        public static int EjecutarEliminarTipoConductor(SqlCommand comandoTipoConductor)
+        {
+            try
+            {
+                comandoTipoConductor.Connection.Open();
+                return comandoTipoConductor.ExecuteNonQuery();
+            }
+            catch { throw; }
+            finally
+            {
+                comandoTipoConductor.Connection.Dispose();
+                comandoTipoConductor.Connection.Close();
+            }
+        }
+
+
 
     }
 }

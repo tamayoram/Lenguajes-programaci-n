@@ -24,5 +24,19 @@ namespace Negocio.TipoConductor
             return accesoMetodosCRUDTipoConductor.ConsultandoTipoConductor();
 
         }
+
+        //Negociar operación para actualizar
+        public int NegociarActualizarTipoConductor(int Id, string nombre)
+        {
+            accesoMetodosCRUDTipoConductor accesoTipoConductor = new accesoMetodosCRUDTipoConductor();
+            return accesoTipoConductor.ActualizarTipoConductor(Id, nombre);
+        }
+
+        //Negociar operación para eliminar
+        public int NegociarEliminarTipoConductor(int Id)
+        {
+            accesoMetodosCRUDTipoConductor accesoTipoConductor = new accesoMetodosCRUDTipoConductor();
+            return accesoTipoConductor.EliminarTipoConductor(Id);
+        }
     }
 }

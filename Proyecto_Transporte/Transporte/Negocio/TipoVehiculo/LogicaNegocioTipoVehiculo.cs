@@ -25,6 +25,20 @@ namespace Negocio.TipoVehiculo
 
         }
 
+        //Negociar operación para actualizar
+        public int negociarActualizarTipoVehiculo(int id_vehiculo, string nombre)
+        {
+            accesoMetodosCRUDTipoVehiculo accesoTipoVehiculo = new accesoMetodosCRUDTipoVehiculo();
+            return accesoTipoVehiculo.ActualizarTipoVehiculo(id_vehiculo, nombre);
+        }
+
+        //Negociar operación para eliminiar
+        public int negociarEliminarTipoVehiculo(int id_vehiculo)
+        {
+            accesoMetodosCRUDTipoVehiculo accesoTipoVehiculo = new accesoMetodosCRUDTipoVehiculo();
+            return accesoTipoVehiculo.EliminarTipoVehiculo(id_vehiculo);
+        }
+
 
     }
 

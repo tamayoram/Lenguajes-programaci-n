@@ -72,5 +72,76 @@ namespace Transporte
             GridView.DataBind();
             idTipoConductor.Value = nombreTipoConductor.Value = "";
         }
+
+        protected void actualizarTipoConductor_Click(object sender, EventArgs e)
+        {
+            int id_TipoConductor = Int32.Parse(idTipoConductor.Value);
+            string nombre_TipoConductor = nombreTipoConductor.Value;
+
+            LogicaNegocioTipoConductor negocioTipoConductor = new LogicaNegocioTipoConductor();
+            int resultadoTipoConductor = negocioTipoConductor.NegociarActualizarTipoConductor(id_TipoConductor, nombre_TipoConductor);
+
+            if (resultadoTipoConductor > 0)
+
+                lblMensajeTipoConductor.Text = "Registro actualizado";
+            else
+                lblMensajeTipoConductor.Text = "No se realizó la actualización";
+
+            negocioTipoConductor = null;
+
+        }
+
+        protected void actualizarTipoVehiculo_Click(object sender, EventArgs e)
+        {
+            int id_TipoVehiculo = Int32.Parse(idTipoVehiculo.Value);
+            string nombre_TipoVehiculo = nombreTipoVehiculo.Value;
+
+            LogicaNegocioTipoVehiculo negocioTipoVehiculo = new LogicaNegocioTipoVehiculo();
+            int resultadoTipoVehiculo = negocioTipoVehiculo.negociarActualizarTipoVehiculo(id_TipoVehiculo, nombre_TipoVehiculo);
+
+            if (resultadoTipoVehiculo > 0)
+
+                lblMensajeTipoVehiculo.Text = "Registro actualizado";
+            else
+                lblMensajeTipoVehiculo.Text = "No se realizó la actualización";
+
+            negocioTipoVehiculo = null;
+
+        }
+
+        protected void eliminarTipoConductor_Click(object sender, EventArgs e)
+        {
+            int id_TipoConductor = Int32.Parse(idTipoConductor.Value);
+            
+
+            LogicaNegocioTipoConductor negocioTipoConductor = new LogicaNegocioTipoConductor();
+            int resultadoTipoConductor = negocioTipoConductor.NegociarEliminarTipoConductor(id_TipoConductor);
+
+            if (resultadoTipoConductor > 0)
+
+                lblMensajeTipoConductor.Text = "Registro eliminado";
+            else
+                lblMensajeTipoConductor.Text = "No se eliminó el registro";
+
+            negocioTipoConductor = null;
+
+        }
+
+        protected void eliminarTipoVehiculo_Click(object sender, EventArgs e)
+        {
+            int id_TipoVehiculo = Int32.Parse(idTipoVehiculo.Value);
+            
+            LogicaNegocioTipoVehiculo negocioTipoVehiculo = new LogicaNegocioTipoVehiculo();
+            int resultadoTipoVehiculo = negocioTipoVehiculo.negociarEliminarTipoVehiculo(id_TipoVehiculo);
+
+            if (resultadoTipoVehiculo > 0)
+
+                lblMensajeTipoVehiculo.Text = "Registro eliminado";
+            else
+                lblMensajeTipoVehiculo.Text = "No se eliminó el registro";
+
+            negocioTipoVehiculo = null;
+
+        }
     }
 }

@@ -36,9 +36,9 @@
             <input type="text" class="form-control" id="nombreTipoConductor" name="" runat="server"/>
            </div>
              <asp:Button class="btn btn-primary" id="insertarTipoConductor" runat="server" Text="Insertar" OnClick="InsertarTipoConductor_Click"/>
-             <asp:Button class="btn btn-primary" id="actualizarTipoConductor" runat="server" Text="Actualizar"/>
+             <asp:Button class="btn btn-primary" id="actualizarTipoConductor" runat="server" Text="Actualizar" OnClick="actualizarTipoConductor_Click"/>
              <asp:Button class="btn btn-primary" id="listarTipoConductor" runat="server" Text="Listar" OnClick="ListarTipoConductor_Click"/>
-             <asp:Button class="btn btn-primary" id="eliminarTipoConductor" runat="server" Text="Eliminar"/>
+             <asp:Button class="btn btn-primary" id="eliminarTipoConductor" runat="server" Text="Eliminar" OnClick="eliminarTipoConductor_Click"/>
 
             <br />
             <br />
@@ -75,9 +75,9 @@
            </div>
             
                  <asp:Button class="btn btn-primary" id="insertarTipoVehiculo" runat="server" Text="Insertar" OnClick="InsertarTipoVehiculo_Click"/>
-                 <asp:Button class="btn btn-primary" id="actualizarTipoVehiculo" runat="server" Text="Actualizar"/>
+                 <asp:Button class="btn btn-primary" id="actualizarTipoVehiculo" runat="server" Text="Actualizar" OnClick="actualizarTipoVehiculo_Click"/>
                  <asp:Button class="btn btn-primary" id="listarTipoVehiculo" runat="server" Text="Listar" OnClick="ListarTipoVehiculo_Click"/>
-                 <asp:Button class="btn btn-primary" id="eliminarTipoVehiculo" runat="server" Text="Eliminar"/>
+                 <asp:Button class="btn btn-primary" id="eliminarTipoVehiculo" runat="server" Text="Eliminar" OnClick="eliminarTipoVehiculo_Click"/>
 
           <br />
           <br />

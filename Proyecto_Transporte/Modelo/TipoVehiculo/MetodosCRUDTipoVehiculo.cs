@@ -21,7 +21,7 @@ namespace Modelo.TipoVehiculo
 
         }
 
-        //Ejecución del comando que se creó en el método
+        //Ejecución del método que se creó para insertar
         public static int EjecutarinsertarTipoVehiculo(SqlCommand comandoTipoVehiculo)
         {
             try
@@ -37,7 +37,7 @@ namespace Modelo.TipoVehiculo
             }
         }
 
-        //Crear tipo comando forma consultar
+        //método para consultar datos
 
         public static SqlCommand ConsultarTipoVehiculo()
         {
@@ -54,7 +54,7 @@ namespace Modelo.TipoVehiculo
 
         }
 
-        // ejecutar tipo de comando consulta
+        //ejecución del método que se creó para consultar
 
         public static DataTable EjecutarConsultarTipoVehiculo(SqlCommand comandoTipoVehiculo)
         {
@@ -80,6 +80,61 @@ namespace Modelo.TipoVehiculo
 
 
         }
+
+        //método para actualizar datos utilizando procedimientos almacenados
+        public static SqlCommand ActualizarTipoVehiculo()
+        {
+            string _cadenaConexionTipoVehiculo = configuracion.CadenaConexion;
+            SqlConnection _conexionTipoVehiculo = new SqlConnection(_cadenaConexionTipoVehiculo);
+            SqlCommand _comandoTipoVehiculo = new SqlCommand("actualizarTipoVehiculo", _conexionTipoVehiculo);
+            _comandoTipoVehiculo.CommandType = CommandType.StoredProcedure;
+            return _comandoTipoVehiculo;
+
+        }
+
+        //Ejecución del método que se creó para actualizar
+        public static int EjecutarActualizarTipoVehiculo(SqlCommand comandoTipoVehiculo)
+        {
+            try
+            {
+                comandoTipoVehiculo.Connection.Open();
+                return comandoTipoVehiculo.ExecuteNonQuery();
+            }
+            catch { throw; }
+            finally
+            {
+                comandoTipoVehiculo.Connection.Dispose();
+                comandoTipoVehiculo.Connection.Close();
+            }
+        }
+
+        //método para eliminar datos utilizando procedimientos almacenados
+        public static SqlCommand EliminarTipoVehiculo()
+        {
+            string _cadenaConexionTipoVehiculo = configuracion.CadenaConexion;
+            SqlConnection _conexionTipoVehiculo = new SqlConnection(_cadenaConexionTipoVehiculo);
+            SqlCommand _comandoTipoVehiculo = new SqlCommand("eliminarTipoVehiculo", _conexionTipoVehiculo);
+            _comandoTipoVehiculo.CommandType = CommandType.StoredProcedure;
+            return _comandoTipoVehiculo;
+
+        }
+
+        //Ejecución del método que se creó para actualizar
+        public static int EjecutarEliminarTipoVehiculo(SqlCommand comandoTipoVehiculo)
+        {
+            try
+            {
+                comandoTipoVehiculo.Connection.Open();
+                return comandoTipoVehiculo.ExecuteNonQuery();
+            }
+            catch { throw; }
+            finally
+            {
+                comandoTipoVehiculo.Connection.Dispose();
+                comandoTipoVehiculo.Connection.Close();
+            }
+        }
+
 
 
 
