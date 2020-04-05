@@ -15,7 +15,13 @@
 </head>
 <body>
 <form id="form1" runat="server">
- <div class="container my-5">   
+        
+ <div class="container my-5">  
+     
+     <div class="row float-right">
+          <a href="Index.html"><span class="badge badge-success">Volver al inicio</span></a>
+     </div>
+
       <div class="row">   
         <div class="col-6">
        
@@ -96,5 +102,6 @@
 </div>
 
 </form>
+    
 </body>
 </html>

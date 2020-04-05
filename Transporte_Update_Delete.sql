@@ -4,6 +4,8 @@ create database transporte
 
 use transporte
 
+/******** Tablas conductor y vehículo *******/
+
 /*Create*/
 
 create table conductor(
@@ -24,9 +26,7 @@ matricula varchar(255),
 alter table conductor
 add constraint FKvehiculo_conductor foreign key(id_vehiculo) references vehiculo(id_vehiculo)
 
-//procedimiento almacenado para insertar registros en conductor
-
-
+/*Procedimiento insertar*/
 
 create proc registrarConductor
 (
@@ -54,11 +54,59 @@ as insert into vehiculo values(@id_vehiculo,@marca,@modelo,@matricula)
 
 select * from vehiculo
 select * from conductor
+select Id,nombre,tipo_licencia from conductor
 
 exec registrarVehiculo '1','Mazda','2018','DFS298'
 
 exec registrarConductor '1','Camilo','A','1','32'
 
+
+/*Procedimient Update*/
+
+create proc actualizarConductor
+(
+	@Id  int,
+	@nombre varchar(255),
+	@tipo_licencia varchar(255)
+)
+
+as update conductor set nombre=@nombre,tipo_licencia=@tipo_licencia where Id=@Id
+
+
+create proc actualizarVehiculo
+(
+
+	@id_vehiculo int,
+	@marca varchar(255),
+	@modelo varchar(255),
+	@matricula varchar(255)
+	
+)
+
+as update vehiculo set marca=@marca,modelo=@modelo,matricula=@matricula where id_vehiculo=@id_vehiculo
+
+/*Procedimient Delete*/
+
+create proc eliminarConductor
+(
+	@Id  int
+)
+
+as delete from conductor where Id=@Id
+
+
+create proc eliminarVehiculo
+(
+
+	@id_vehiculo int
+		
+)
+
+as delete from vehiculo where id_vehiculo=@id_vehiculo
+
+
+
+/*****************Tablas tipo conductor y tipo vehiculo ***********/
 
 /*Create*/
 

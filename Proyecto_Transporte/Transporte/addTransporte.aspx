@@ -15,11 +15,19 @@
 
     <form id="form1" runat="server">
     
- <div class="container my-5">   
+ <div class="container my-5">
+     <div class="row float-right">
+                  <a href="Index.html"><span class="badge badge-success">Volver al inicio</span></a>
+     </div>
+
       <div class="row">
       
       <div class="col-6">
        <h2>Registro de conductores</h2>
+
+           <br />
+            <asp:Label ID="lblMensajeConductor" runat="server" ForeColor="Blue" EnableViewState="false"></asp:Label>
+            <br />
    
        <div class="form-group">
         <label for="">ID:</label>
@@ -47,13 +55,34 @@
        </div>
         
      <asp:Button class="btn btn-primary" id="enviarcond" runat="server" Text="Enviar" OnClick="enviarcond_Click" />
-      
+     <asp:Button class="btn btn-primary" id="actualizarConductor" runat="server" Text="Actualizar" OnClick="actualizarConductor_Click"/>
+     <asp:Button class="btn btn-primary" id="listarConductor" runat="server" Text="Listar" OnClick="listarConductor_Click"/>
+     <asp:Button class="btn btn-primary" id="eliminarConductor" runat="server" Text="Eliminar" OnClick="eliminarConductor_Click"/> 
+
+           <br />
+            <br />
+         
+       <asp:GridView ID="GridViewConductor" runat="server" AutoGenerateColumns="false">
+
+            <Columns>
+                <asp:BoundField DataField="Id" HeaderText="Identificación"/>
+                <asp:BoundField DataField="nombre" HeaderText="Nombre" />
+                <asp:BoundField DataField="tipo_licencia" HeaderText="Tipo de licencia" />
+                </Columns>
+       </asp:GridView>
+
+
       </div>
     
         
     <div class="col-6">
      
-    <h2>Registro de vehículos</h2>      
+    <h2>Registro de vehículos</h2> 
+        
+        <br />
+            <asp:Label ID="lblMensajeVehiculo" runat="server" ForeColor="Blue" EnableViewState="false"></asp:Label>
+            <br />
+
        <div class="form-group">
         <label for="">Identificación de vehículo:</label>
         <input type="text" class="form-control" id="idVehiculo" name="" runat="server"/>
@@ -75,12 +104,29 @@
        </div>
     
         <asp:Button class="btn btn-primary" id="enviarVehiculo" runat="server" Text="Enviar" OnClick="enviarVehiculo_Click" />
-   
+        <asp:Button class="btn btn-primary" id="actualizarVehiculo" runat="server" Text="Actualizar"/>
+        <asp:Button class="btn btn-primary" id="listarVehiculo" runat="server" Text="Listar"/>
+        <asp:Button class="btn btn-primary" id="eliminarVehiculo" runat="server" Text="Eliminar"/> 
+
+            <br />
+            <br />
+         
+       <asp:GridView ID="GridViewVehiculo" runat="server" AutoGenerateColumns="false">
+
+            <Columns>
+                <asp:BoundField DataField="id_vehiculo" HeaderText="Id vehículo"/>
+                <asp:BoundField DataField="marca" HeaderText="Marca" />
+                <asp:BoundField DataField="modelo" HeaderText="Modelo" />
+                <asp:BoundField DataField="matricula" HeaderText="Matricula" />
+            </Columns>
+       </asp:GridView>
+
    </div>
     </div>      
 </div>
 </form>
-        
+    
+    
 
 </body>
 </html>
