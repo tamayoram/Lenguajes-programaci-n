@@ -15,7 +15,7 @@ namespace Transporte
             if (!Page.IsPostBack)
             {
                 listarConductor_Click(sender, e);
-                
+                listarVehiculo_Click(sender, e);
             }
 
         }
@@ -102,6 +102,51 @@ namespace Transporte
                 lblMensajeConductor.Text = "No se eliminó el registro";
 
             negocioConductor = null;
+        }
+
+        protected void listarVehiculo_Click(object sender, EventArgs e)
+        {
+            GridViewVehiculo.DataSource = LogicaNegocioVehiculo.NegociarConsultaVehiculo();
+            GridViewVehiculo.DataBind();
+            idVehiculo.Value = marca.Value = modelo.Value = matricula.Value="";
+        }
+
+        protected void actualizarVehiculo_Click(object sender, EventArgs e)
+        {
+            int id_Vehiculo = Int32.Parse(idVehiculo.Value);
+            string marca_Vehiculo = marca.Value;
+            string modelo_vehiculo = modelo.Value;
+            string matricula_vehiculo = matricula.Value;
+
+            LogicaNegocioVehiculo negocioVehiculo = new LogicaNegocioVehiculo();
+            int resultadoVehiculo = negocioVehiculo.NegociarActualizarVehiculo(id_Vehiculo,marca_Vehiculo,modelo_vehiculo,matricula_vehiculo);
+
+            if (resultadoVehiculo > 0)
+
+                lblMensajeVehiculo.Text = "Registro actualizado";
+            else
+                lblMensajeVehiculo.Text = "No se realizó la actualización";
+
+            negocioVehiculo = null;
+
+        }
+
+        protected void eliminarVehiculo_Click(object sender, EventArgs e)
+        {
+            int id_Vehiculo = Int32.Parse(idVehiculo.Value);
+
+
+            LogicaNegocioVehiculo negocioVehiculo = new LogicaNegocioVehiculo();
+            int resultadoVehiculo = negocioVehiculo.NegociarEliminarVehiculo(id_Vehiculo);
+
+            if (resultadoVehiculo > 0)
+
+                lblMensajeVehiculo.Text = "Registro eliminado";
+            else
+                lblMensajeVehiculo.Text = "No se eliminó el registro";
+
+            negocioVehiculo = null;
+
         }
     }
 }

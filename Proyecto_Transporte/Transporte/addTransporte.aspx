@@ -104,9 +104,9 @@
        </div>
     
         <asp:Button class="btn btn-primary" id="enviarVehiculo" runat="server" Text="Enviar" OnClick="enviarVehiculo_Click" />
-        <asp:Button class="btn btn-primary" id="actualizarVehiculo" runat="server" Text="Actualizar"/>
-        <asp:Button class="btn btn-primary" id="listarVehiculo" runat="server" Text="Listar"/>
-        <asp:Button class="btn btn-primary" id="eliminarVehiculo" runat="server" Text="Eliminar"/> 
+        <asp:Button class="btn btn-primary" id="actualizarVehiculo" runat="server" Text="Actualizar" OnClick="actualizarVehiculo_Click"/>
+        <asp:Button class="btn btn-primary" id="listarVehiculo" runat="server" Text="Listar" OnClick="listarVehiculo_Click"/>
+        <asp:Button class="btn btn-primary" id="eliminarVehiculo" runat="server" Text="Eliminar" OnClick="eliminarVehiculo_Click"/> 
 
             <br />
             <br />
