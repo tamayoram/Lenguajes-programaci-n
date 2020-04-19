@@ -38,7 +38,7 @@
            </div>
 
            <div class="form-group">
-            <label for="">Nombre del conductor:</label>
+            <label for="">Tipo de conductor:</label>
             <input type="text" class="form-control" id="nombreTipoConductor" name="" runat="server"/>
            </div>
              <asp:Button class="btn btn-primary" id="insertarTipoConductor" runat="server" Text="Insertar" OnClick="InsertarTipoConductor_Click"/>

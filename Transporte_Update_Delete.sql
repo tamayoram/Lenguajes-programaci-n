@@ -184,3 +184,36 @@ as delete from tipoVehiculo where id_vehiculo=@id_vehiculo
 
 select * from tipoVehiculo
 select * from tipoConductor
+
+/***********Tablas contrato y ruta*************/
+
+
+
+/******Relaciones entre las tablas******/
+
+
+/*Id tipo de conductor en la tabla conductor*/
+
+select * from conductor
+delete from conductor
+
+alter table conductor 
+add id_tipo_conductor int not null
+
+alter table conductor
+alter column id_tipo_conductor int not null
+
+
+alter table conductor
+add constraint FKconductor_tipo foreign key(id_tipo_conductor) references tipoConductor(Id)  
+
+/*Id tipo de vehiculo en la tabla vehiculo*/
+
+select * from vehiculo
+delete from vehiculo
+
+alter table vehiculo 
+add id_tipo_vehiculo int not null
+
+alter table vehiculo
+add constraint FKvehiculo_tipo foreign key(id_tipo_vehiculo) references tipoVehiculo(id_vehiculo) 

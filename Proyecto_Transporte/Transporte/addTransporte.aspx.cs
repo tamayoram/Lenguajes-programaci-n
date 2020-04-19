@@ -16,6 +16,9 @@ namespace Transporte
             {
                 listarConductor_Click(sender, e);
                 listarVehiculo_Click(sender, e);
+                idVehiculoConducto_SelectedIndexChanged(sender, e);
+                tipoConductor_SelectedIndexChanged(sender, e);
+                tipoVehiculo_SelectedIndexChanged(sender, e);
             }
 
         }
@@ -26,8 +29,8 @@ namespace Transporte
             int id_conductor = Int32.Parse(idConductor.Value);
             string nombre_conductor = nombre.Value;
             string tipo_licencia = licencia.Value;
-            int id_vehiculo = Int32.Parse(idVehiculoConductor.Value);
-            int id_tipo_conductor = Int32.Parse(tipo.Value);
+            int id_vehiculo = Int32.Parse(idVehiculoConducto.Text);
+            int id_tipo_conductor = Int32.Parse(tipoConductor.Text);
 
             logicaNegocioConductor negocioConductor = new logicaNegocioConductor();
             int resultadoConductor= negocioConductor.negociarInsertarConductor(id_conductor, nombre_conductor, tipo_licencia, id_vehiculo, id_tipo_conductor);
@@ -49,9 +52,10 @@ namespace Transporte
             string marca_vehiculo = marca.Value;
             string modelo_vehiculo = modelo.Value;
             string matricula_vehiculo = matricula.Value;
-            
+            int id_tipo_vehiculo = Int32.Parse(tipoVehiculo.Text);
+
             LogicaNegocioVehiculo negocioVehiculo = new LogicaNegocioVehiculo();
-            int resultadoVehiculo=negocioVehiculo.negociarInsertarVehiculo(id_vehiculo, marca_vehiculo, modelo_vehiculo, matricula_vehiculo);
+            int resultadoVehiculo=negocioVehiculo.negociarInsertarVehiculo(id_vehiculo, marca_vehiculo, modelo_vehiculo, matricula_vehiculo,id_tipo_vehiculo);
 
             if (resultadoVehiculo > 0)
 
@@ -146,6 +150,35 @@ namespace Transporte
                 lblMensajeVehiculo.Text = "No se eliminó el registro";
 
             negocioVehiculo = null;
+
+        }
+
+        protected void idVehiculoConducto_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            idVehiculoConducto.DataSource = logicaNegocioConductor.negociarListaVehiculos();
+            idVehiculoConducto.DataTextField = "matricula";
+            idVehiculoConducto.DataValueField = "id_vehiculo";
+
+            idVehiculoConducto.DataBind(); 
+        }
+
+        protected void tipoConductor_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tipoConductor.DataSource = logicaNegocioConductor.negociarListaTipoConductor();
+            tipoConductor.DataTextField = "nombre";
+            tipoConductor.DataValueField = "Id";
+
+            tipoConductor.DataBind();
+
+        }
+
+        protected void tipoVehiculo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            tipoVehiculo.DataSource = LogicaNegocioVehiculo.negociarListaTipo_Vehiculos();
+            tipoVehiculo.DataTextField = "nombre";
+            tipoVehiculo.DataValueField = "id_vehiculo";
+
+            tipoVehiculo.DataBind();
 
         }
     }

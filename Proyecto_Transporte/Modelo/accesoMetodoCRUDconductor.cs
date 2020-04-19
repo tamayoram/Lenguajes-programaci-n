@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelo.TipoConductor;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -52,6 +53,26 @@ namespace Modelo
             SqlCommand _comandoConductor = MetodosCRUDconductor.EliminarConductor();
             _comandoConductor.Parameters.AddWithValue("Id", Id);
             return MetodosCRUDconductor.EjecutarEliminarConductor(_comandoConductor);
+        }
+
+        //Cargar el control para listar tipo de vehículos
+
+        public static DataTable obtenerListaTipoVehiculo()
+        {
+            SqlCommand _comando = MetodosCRUDvehiculo.ConsultarVehiculo();
+            _comando.CommandText = "select * from vehiculo";
+            return MetodosCRUDvehiculo.EjecutarConsultarVehiculo(_comando);
+
+        }
+
+        //Cargar el control para listar tipo de conductor
+
+        public static DataTable obtenerListaTipoConductor()
+        {
+            SqlCommand _comando = MetodosCRUDTipoConductor.ConsultarTipoConductor();
+            _comando.CommandText = "select * from tipoConductor";
+            return MetodosCRUDTipoConductor.EjecutarConsultarTipoConductor(_comando);
+
         }
 
 

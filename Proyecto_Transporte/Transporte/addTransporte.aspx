@@ -46,12 +46,12 @@
 
        <div class="form-group">
         <label for="">Identificación de vehículo:</label>
-        <input type="text" class="form-control" id="idVehiculoConductor" name="" runat="server"/>
+        <asp:DropDownList id="idVehiculoConducto" runat="server" CssClass="form-control" OnSelectedIndexChanged="idVehiculoConducto_SelectedIndexChanged"> </asp:DropDownList>
        </div>
 
        <div class="form-group">
         <label for="">Tipo de conductor:</label>
-        <input type="text" class="form-control" id="tipo" name="" runat="server"/>
+        <asp:DropDownList id="tipoConductor" runat="server" CssClass="form-control"> </asp:DropDownList>
        </div>
         
      <asp:Button class="btn btn-primary" id="enviarcond" runat="server" Text="Enviar" OnClick="enviarcond_Click" />
@@ -101,6 +101,11 @@
        <div class="form-group">
         <label for="">Matricula:</label>
         <input type="text" class="form-control" id="matricula" name="" runat="server"/>
+       </div>
+
+         <div class="form-group">
+        <label for="">Tipo de vehiculo:</label>
+        <asp:DropDownList id="tipoVehiculo" runat="server" CssClass="form-control" OnSelectedIndexChanged="tipoVehiculo_SelectedIndexChanged"> </asp:DropDownList>
        </div>
     
         <asp:Button class="btn btn-primary" id="enviarVehiculo" runat="server" Text="Enviar" OnClick="enviarVehiculo_Click" />

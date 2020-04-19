@@ -10,10 +10,10 @@ namespace Negocio
 {
     public class LogicaNegocioVehiculo
     {
-        public int negociarInsertarVehiculo(int id_vehiculo, string marca, string modelo, string matricula)
+        public int negociarInsertarVehiculo(int id_vehiculo, string marca, string modelo, string matricula,int id_tipo_vehiculo)
         {
             accesoMetodoCRUDvehiculo accesoVehiculo = new accesoMetodoCRUDvehiculo();
-            return accesoVehiculo.InsertarVehiculo(id_vehiculo,marca,modelo,matricula);
+            return accesoVehiculo.InsertarVehiculo(id_vehiculo,marca,modelo,matricula,id_tipo_vehiculo);
         }
 
         //Negociar operación para consultar
@@ -36,6 +36,13 @@ namespace Negocio
         {
             accesoMetodoCRUDvehiculo accesoVehiculo = new accesoMetodoCRUDvehiculo ();
             return accesoVehiculo.EliminarVehiculo(id_vehiculo);
+        }
+
+        // cargar la información en el control de tipo de vehiculo
+
+        public static DataTable negociarListaTipo_Vehiculos()
+        {
+            return accesoMetodoCRUDvehiculo.obtenerListaTipo_Vehiculo();
         }
     }
 }

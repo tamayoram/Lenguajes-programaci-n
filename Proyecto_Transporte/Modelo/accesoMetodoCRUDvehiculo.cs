@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Modelo.TipoVehiculo;
+using System;
 using System.Collections.Generic;
 using System.Data;
 using System.Data.SqlClient;
@@ -10,15 +11,16 @@ namespace Modelo
 {
     public class accesoMetodoCRUDvehiculo
     {
-        public int InsertarVehiculo(int id_vehiculo, string marca, string modelo, string matricula)
+        public int InsertarVehiculo(int id_vehiculo, string marca, string modelo, string matricula,int id_tipo_vehiculo)
         {
             SqlCommand _comandoVehiculo = MetodosCRUDvehiculo.insertarVehiculo();
             _comandoVehiculo.Parameters.AddWithValue("@id_vehiculo", id_vehiculo);
             _comandoVehiculo.Parameters.AddWithValue("@marca", marca);
             _comandoVehiculo.Parameters.AddWithValue("@modelo", modelo);
             _comandoVehiculo.Parameters.AddWithValue("@matricula", matricula);
-            
-           return MetodosCRUDvehiculo.EjecutarinsertarVehiculo(_comandoVehiculo);
+            _comandoVehiculo.Parameters.AddWithValue("@id_tipo_vehiculo", id_tipo_vehiculo);
+
+            return MetodosCRUDvehiculo.EjecutarinsertarVehiculo(_comandoVehiculo);
         }
 
         //Operación para consultar
@@ -49,6 +51,16 @@ namespace Modelo
             SqlCommand _comandoVehiculo = MetodosCRUDvehiculo.EliminarVehiculo();
             _comandoVehiculo.Parameters.AddWithValue("id_vehiculo", id_vehiculo);
             return MetodosCRUDvehiculo.EjecutarEliminarVehiculo(_comandoVehiculo);
+        }
+
+        //Cargar el control para listar tipo de vehículos
+
+        public static DataTable obtenerListaTipo_Vehiculo()
+        {
+            SqlCommand _comando = MetodosCRUDTipoVehiculo.ConsultarTipoVehiculo();
+            _comando.CommandText = "select * from tipoVehiculo";
+            return MetodosCRUDTipoVehiculo.EjecutarConsultarTipoVehiculo(_comando);
+
         }
     }
 }

@@ -60,22 +60,22 @@ namespace Transporte
         protected global::System.Web.UI.HtmlControls.HtmlInputText licencia;
 
         /// <summary>
-        /// Control idVehiculoConductor.
+        /// Control idVehiculoConducto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText idVehiculoConductor;
+        protected global::System.Web.UI.WebControls.DropDownList idVehiculoConducto;
 
         /// <summary>
-        /// Control tipo.
+        /// Control tipoConductor.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlInputText tipo;
+        protected global::System.Web.UI.WebControls.DropDownList tipoConductor;
 
         /// <summary>
         /// Control enviarcond.
@@ -166,6 +166,15 @@ namespace Transporte
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlInputText matricula;
+
+        /// <summary>
+        /// Control tipoVehiculo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.DropDownList tipoVehiculo;
 
         /// <summary>
         /// Control enviarVehiculo.

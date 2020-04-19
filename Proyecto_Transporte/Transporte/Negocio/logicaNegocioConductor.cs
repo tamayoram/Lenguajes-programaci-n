@@ -39,5 +39,19 @@ namespace Negocio
             accesoMetodoCRUDconductor accesoConductor = new accesoMetodoCRUDconductor();
             return accesoConductor.EliminarTipoConductor(Id);
         }
+
+        // cargar la información en el control de tipo de vehiculo
+
+        public static DataTable negociarListaVehiculos()
+        {
+            return accesoMetodoCRUDconductor.obtenerListaTipoVehiculo();
+        }
+
+        // cargar la información en el control de tipo de conductor
+
+        public static DataTable negociarListaTipoConductor()
+        {
+            return accesoMetodoCRUDconductor.obtenerListaTipoConductor();
+        }
     }
 }
