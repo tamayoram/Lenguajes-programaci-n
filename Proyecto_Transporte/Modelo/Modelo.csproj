@@ -46,6 +46,7 @@
     <Compile Include="accesoMetodoCRUDconductor.cs" />
     <Compile Include="accesoMetodoCRUDvehiculo.cs" />
     <Compile Include="configuracion.cs" />
+    <Compile Include="Contrato\MetodosCRUDContrato.cs" />
     <Compile Include="MetodosCRUDconductor.cs" />
     <Compile Include="MetodosCRUDvehiculo.cs" />
     <Compile Include="Program.cs" />

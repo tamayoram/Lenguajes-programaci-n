@@ -187,10 +187,89 @@ select * from tipoConductor
 
 /***********Tablas contrato y ruta*************/
 
+/*Create*/
 
+create table contrato(
+Id  int primary key,
+id_conductor int not null,
+id_vehiculo int not null,
+)
+
+create table ruta(
+Id int primary key,
+estacion varchar(255),
+id_vehiculo int not null,
+)
+
+/*Procedimiento insert*/
+
+create proc registrarContrato
+(
+	@Id  int,
+	@id_conductor int,
+	@id_vehiculo int
+)
+
+as insert into contrato values(@Id,@id_conductor,@id_vehiculo)
+
+create proc registrarRuta
+(
+
+	@Id int,
+	@estacion varchar(255),
+	@id_vehiculo int
+	
+)
+
+as insert into ruta values(@Id,@estacion,@id_vehiculo)
+
+/*Procedimiento Update*/
+
+create proc actualizarContrato
+(
+	@Id  int,
+	@id_conductor int,
+	@id_vehiculo int
+)
+
+as update contrato set id_conductor=@id_conductor,id_vehiculo=@id_vehiculo where Id=@Id
+
+
+create proc actualizarRuta
+(
+
+	@Id int,
+	@estacion varchar(255),
+	@id_vehiculo int
+	
+)
+
+as update ruta set estacion=@estacion, @id_vehiculo=id_vehiculo where Id=@Id
+
+
+/*Procedimiento Delete*/
+
+create proc eliminarContrato
+(
+	@Id  int
+)
+
+as delete from contrato where Id=@Id
+
+
+create proc eliminarRuta
+(
+
+	@Id int
+		
+)
+
+as delete from ruta where Id=@Id
+
+select * from contrato
+select * from ruta
 
 /******Relaciones entre las tablas******/
-
 
 /*Id tipo de conductor en la tabla conductor*/
 
@@ -217,3 +296,18 @@ add id_tipo_vehiculo int not null
 
 alter table vehiculo
 add constraint FKvehiculo_tipo foreign key(id_tipo_vehiculo) references tipoVehiculo(id_vehiculo) 
+
+/*Id de conductor en contrato*/
+
+alter table contrato
+add constraint FKconductor_contrato foreign key(id_conductor) references conductor(Id)
+
+/*Id de vehiculo en contrato*/
+
+alter table contrato
+add constraint FKvehiculo_contrato foreign key(id_vehiculo) references vehiculo(id_vehiculo) 
+
+/*Id de vehiculo en ruta*/
+
+alter table ruta
+add constraint FKvehiculo_ruta foreign key(id_vehiculo) references vehiculo(id_vehiculo) 
