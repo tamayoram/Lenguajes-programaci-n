@@ -54,7 +54,7 @@
         <asp:DropDownList id="tipoConductor" runat="server" CssClass="form-control"> </asp:DropDownList>
        </div>
         
-     <asp:Button class="btn btn-primary" id="enviarcond" runat="server" Text="Enviar" OnClick="enviarcond_Click" />
+     <asp:Button class="btn btn-primary" id="enviarcond" runat="server" Text="Insertar" OnClick="enviarcond_Click" />
      <asp:Button class="btn btn-primary" id="actualizarConductor" runat="server" Text="Actualizar" OnClick="actualizarConductor_Click"/>
      <asp:Button class="btn btn-primary" id="listarConductor" runat="server" Text="Listar" OnClick="listarConductor_Click"/>
      <asp:Button class="btn btn-primary" id="eliminarConductor" runat="server" Text="Eliminar" OnClick="eliminarConductor_Click"/> 
@@ -108,7 +108,7 @@
         <asp:DropDownList id="tipoVehiculo" runat="server" CssClass="form-control" OnSelectedIndexChanged="tipoVehiculo_SelectedIndexChanged"> </asp:DropDownList>
        </div>
     
-        <asp:Button class="btn btn-primary" id="enviarVehiculo" runat="server" Text="Enviar" OnClick="enviarVehiculo_Click" />
+        <asp:Button class="btn btn-primary" id="enviarVehiculo" runat="server" Text="Insertar" OnClick="enviarVehiculo_Click" />
         <asp:Button class="btn btn-primary" id="actualizarVehiculo" runat="server" Text="Actualizar" OnClick="actualizarVehiculo_Click"/>
         <asp:Button class="btn btn-primary" id="listarVehiculo" runat="server" Text="Listar" OnClick="listarVehiculo_Click"/>
         <asp:Button class="btn btn-primary" id="eliminarVehiculo" runat="server" Text="Eliminar" OnClick="eliminarVehiculo_Click"/> 
