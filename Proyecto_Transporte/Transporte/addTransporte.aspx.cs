@@ -54,8 +54,10 @@ namespace Transporte
             string matricula_vehiculo = matricula.Value;
             int id_tipo_vehiculo = Int32.Parse(tipoVehiculo.Text);
 
+
+
             LogicaNegocioVehiculo negocioVehiculo = new LogicaNegocioVehiculo();
-            int resultadoVehiculo=negocioVehiculo.negociarInsertarVehiculo(id_vehiculo, marca_vehiculo, modelo_vehiculo, matricula_vehiculo,id_tipo_vehiculo);
+            int resultadoVehiculo=negocioVehiculo.negociarInsertarVehiculo(id_vehiculo, marca_vehiculo, modelo_vehiculo, matricula_vehiculo, id_tipo_vehiculo);
 
             if (resultadoVehiculo > 0)
 
@@ -78,9 +80,11 @@ namespace Transporte
             int id_Conductor = Int32.Parse(idConductor.Value);
             string nombre_Conductor = nombre.Value;
             string licencia_Conductor = licencia.Value;
+            int id_vehiculo = Int32.Parse(idVehiculoConducto.Text);
+            int id_tipo_conductor = Int32.Parse(tipoConductor.Text);
 
             logicaNegocioConductor negocioConductor = new logicaNegocioConductor();
-            int resultadoConductor = negocioConductor.NegociarActualizarConductor(id_Conductor, nombre_Conductor,licencia_Conductor);
+            int resultadoConductor = negocioConductor.NegociarActualizarConductor(id_Conductor, nombre_Conductor,licencia_Conductor,id_vehiculo,id_tipo_conductor);
 
             if (resultadoConductor > 0)
 
@@ -121,9 +125,10 @@ namespace Transporte
             string marca_Vehiculo = marca.Value;
             string modelo_vehiculo = modelo.Value;
             string matricula_vehiculo = matricula.Value;
+            int id_tipo_vehiculo = Int32.Parse(tipoVehiculo.Text);
 
             LogicaNegocioVehiculo negocioVehiculo = new LogicaNegocioVehiculo();
-            int resultadoVehiculo = negocioVehiculo.NegociarActualizarVehiculo(id_Vehiculo,marca_Vehiculo,modelo_vehiculo,matricula_vehiculo);
+            int resultadoVehiculo = negocioVehiculo.NegociarActualizarVehiculo(id_Vehiculo,marca_Vehiculo,modelo_vehiculo,matricula_vehiculo,id_tipo_vehiculo);
 
             if (resultadoVehiculo > 0)
 

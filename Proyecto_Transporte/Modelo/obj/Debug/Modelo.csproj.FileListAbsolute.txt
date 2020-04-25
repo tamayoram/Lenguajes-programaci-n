@@ -16,3 +16,9 @@ C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.exe
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.pdb
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\bin\Debug\Modelo.exe.config
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\bin\Debug\Modelo.exe
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\bin\Debug\Modelo.pdb
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.csprojAssemblyReference.cache
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.exe
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Modelo\obj\Debug\Modelo.pdb

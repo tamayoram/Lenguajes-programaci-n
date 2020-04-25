@@ -48,10 +48,10 @@ namespace Modelo.Contrato
             _conexionContrato.ConnectionString = _cadenaConexionContrato;
 
             // crear la instrucción para consulta
-            SqlCommand _comandContrato = new SqlCommand();
-            _comandContrato = _conexionContrato.CreateCommand();
-            _comandContrato.CommandType = CommandType.Text;
-            return _comandContrato;
+            SqlCommand _comandoContrato = new SqlCommand();
+            _comandoContrato = _conexionContrato.CreateCommand();
+            _comandoContrato.CommandType = CommandType.Text;
+            return _comandoContrato;
 
         }
 
@@ -59,14 +59,14 @@ namespace Modelo.Contrato
 
         public static DataTable EjecutarConsultarContrato(SqlCommand comandoContrato)
         {
-            DataTable _tablaTipoContrato = new DataTable();
+            DataTable _tablaContrato = new DataTable();
 
             try
             {
                 comandoContrato.Connection.Open();
-                SqlDataAdapter adaptadorTipoConductor = new SqlDataAdapter();
-                adaptadorTipoConductor.SelectCommand = comandoContrato;
-                adaptadorTipoConductor.Fill(_tablaTipoContrato);
+                SqlDataAdapter adaptadorContrato = new SqlDataAdapter();
+                adaptadorContrato.SelectCommand = comandoContrato;
+                adaptadorContrato.Fill(_tablaContrato);
 
             }
             catch (Exception Ex) { throw Ex; }
@@ -77,7 +77,7 @@ namespace Modelo.Contrato
 
             }
 
-            return _tablaTipoContrato;
+            return _tablaContrato;
 
 
         }

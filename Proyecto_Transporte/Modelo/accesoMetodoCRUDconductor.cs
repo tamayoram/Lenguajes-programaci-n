@@ -37,12 +37,14 @@ namespace Modelo
         }
 
         // Operación para actualizar datos
-        public int ActualizarConductor(int Id, string nombre,string tipo_licencia)
+        public int ActualizarConductor(int Id, string nombre,string tipo_licencia,int id_vehiculo,int id_tipo_conductor)
         {
             SqlCommand _comandoConductor = MetodosCRUDconductor.ActualizarConductor();
             _comandoConductor.Parameters.AddWithValue("Id", Id);
             _comandoConductor.Parameters.AddWithValue("@nombre", nombre);
             _comandoConductor.Parameters.AddWithValue("@tipo_licencia", tipo_licencia);
+            _comandoConductor.Parameters.AddWithValue("@id_vehiculo", id_vehiculo);
+            _comandoConductor.Parameters.AddWithValue("@id_tipo_conductor", id_tipo_conductor);
 
             return MetodosCRUDconductor.EjecutarActualizarConductor(_comandoConductor);
         }

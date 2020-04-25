@@ -34,13 +34,14 @@ namespace Modelo
         }
 
         // Operación para actualizar datos
-        public int ActualizarVehiculo(int id_vehiculo, string marca, string modelo, string matricula)
+        public int ActualizarVehiculo(int id_vehiculo, string marca, string modelo, string matricula, int id_tipo_vehiculo)
         {
             SqlCommand _comandoVehiculo = MetodosCRUDvehiculo.ActualizarVehiculo();
             _comandoVehiculo.Parameters.AddWithValue("id_vehiculo", id_vehiculo);
             _comandoVehiculo.Parameters.AddWithValue("@marca", marca);
             _comandoVehiculo.Parameters.AddWithValue("@modelo",modelo);
             _comandoVehiculo.Parameters.AddWithValue("@matricula", matricula);
+            _comandoVehiculo.Parameters.AddWithValue("@id_tipo_vehiculo", id_tipo_vehiculo);
 
             return MetodosCRUDvehiculo.EjecutarActualizarVehiculo(_comandoVehiculo);
         }

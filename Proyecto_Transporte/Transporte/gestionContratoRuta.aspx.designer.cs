@@ -141,40 +141,40 @@ namespace Transporte
         protected global::System.Web.UI.WebControls.DropDownList vehiculoRuta;
 
         /// <summary>
-        /// Control insertarTipoVehiculo.
+        /// Control insertarRuta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button insertarTipoVehiculo;
+        protected global::System.Web.UI.WebControls.Button insertarRuta;
 
         /// <summary>
-        /// Control actualizarTipoVehiculo.
+        /// Control actualizarRuta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button actualizarTipoVehiculo;
+        protected global::System.Web.UI.WebControls.Button actualizarRuta;
 
         /// <summary>
-        /// Control listarTipoVehiculo.
+        /// Control listarRuta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button listarTipoVehiculo;
+        protected global::System.Web.UI.WebControls.Button listarRuta;
 
         /// <summary>
-        /// Control eliminarTipoVehiculo.
+        /// Control eliminarRuta.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button eliminarTipoVehiculo;
+        protected global::System.Web.UI.WebControls.Button eliminarRuta;
 
         /// <summary>
         /// Control GridViewRuta.

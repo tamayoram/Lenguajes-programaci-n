@@ -54,9 +54,13 @@ as insert into vehiculo values(@id_vehiculo,@marca,@modelo,@matricula)
 
 select * from vehiculo
 select * from conductor
+select * from contrato
+select * from ruta
+
+
 select Id,nombre,tipo_licencia from conductor
 
-exec registrarVehiculo '1','Mazda','2018','DFS298'
+exec registrarVehiculo '9','Mazda','2018','DFS298','18'
 
 exec registrarConductor '1','Camilo','A','1','32'
 
@@ -211,6 +215,8 @@ create proc registrarContrato
 )
 
 as insert into contrato values(@Id,@id_conductor,@id_vehiculo)
+
+exec registrarContrato '1234','6','4'
 
 create proc registrarRuta
 (

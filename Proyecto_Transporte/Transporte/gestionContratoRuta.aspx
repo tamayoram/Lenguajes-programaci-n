@@ -37,21 +37,21 @@
           
            </div>
 
-          <div class="form-group">
+        <div class="form-group">
         <label for="">Matricula del vehículo:</label>
         <asp:DropDownList id="vehiculoContrato" runat="server" CssClass="form-control"> </asp:DropDownList>
        </div>
 
-             <div class="form-group">
+        <div class="form-group">
         <label for="">Nombre del conductor:</label>
         <asp:DropDownList id="conductorContrato" runat="server" CssClass="form-control"> </asp:DropDownList>
        </div>
 
 
              <asp:Button class="btn btn-primary" id="insertarContrato" runat="server" Text="Insertar" OnClick="insertarContrato_Click"/>
-             <asp:Button class="btn btn-primary" id="actualizarContrato" runat="server" Text="Actualizar"/>
-             <asp:Button class="btn btn-primary" id="listarContrato" runat="server" Text="Listar"/>
-             <asp:Button class="btn btn-primary" id="eliminarContrato" runat="server" Text="Eliminar"/>
+             <asp:Button class="btn btn-primary" id="actualizarContrato" runat="server" Text="Actualizar" OnClick="actualizarContrato_Click"/>
+             <asp:Button class="btn btn-primary" id="listarContrato" runat="server" Text="Listar" OnClick="listarContrato_Click"/>
+             <asp:Button class="btn btn-primary" id="eliminarContrato" runat="server" Text="Eliminar" OnClick="eliminarContrato_Click"/>
 
             <br />
             <br />
@@ -89,14 +89,14 @@
            </div>
 
           <div class="form-group">
-        <label for="">Nombre del vehículo:</label>
+        <label for="">Matricula del vehículo:</label>
         <asp:DropDownList id="vehiculoRuta" runat="server" CssClass="form-control"> </asp:DropDownList>
        </div>
             
-                 <asp:Button class="btn btn-primary" id="insertarTipoVehiculo" runat="server" Text="Insertar"/>
-                 <asp:Button class="btn btn-primary" id="actualizarTipoVehiculo" runat="server" Text="Actualizar"/>
-                 <asp:Button class="btn btn-primary" id="listarTipoVehiculo" runat="server" Text="Listar"/>
-                 <asp:Button class="btn btn-primary" id="eliminarTipoVehiculo" runat="server" Text="Eliminar"/>
+                 <asp:Button class="btn btn-primary" id="insertarRuta" runat="server" Text="Insertar" OnClick="insertarRuta_Click"/>
+                 <asp:Button class="btn btn-primary" id="actualizarRuta" runat="server" Text="Actualizar" OnClick="actualizarRuta_Click"/>
+                 <asp:Button class="btn btn-primary" id="listarRuta" runat="server" Text="Listar" OnClick="listarRuta_Click"/>
+                 <asp:Button class="btn btn-primary" id="eliminarRuta" runat="server" Text="Eliminar" OnClick="eliminarRuta_Click"/>
 
           <br />
           <br />

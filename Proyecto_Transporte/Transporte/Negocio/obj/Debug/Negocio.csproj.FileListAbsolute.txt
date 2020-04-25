@@ -28,3 +28,13 @@ C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.csproj.CopyComplete
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.exe
 C:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.pdb
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Negocio.exe.config
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Negocio.exe
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Negocio.pdb
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Modelo.exe
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Modelo.pdb
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\bin\Debug\Modelo.exe.config
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.csprojAssemblyReference.cache
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.csproj.CopyComplete
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.exe
+G:\Camilo\Desarollo software\nivel 2\Lenguajes-programaci-n\Proyecto_Transporte\Transporte\Negocio\obj\Debug\Negocio.pdb

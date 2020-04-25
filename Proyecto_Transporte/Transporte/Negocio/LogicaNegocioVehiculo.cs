@@ -25,10 +25,10 @@ namespace Negocio
         }
 
         //Negociar operación para actualizar
-        public int NegociarActualizarVehiculo(int id_vehiculo, string marca, string modelo, string matricula)
+        public int NegociarActualizarVehiculo(int id_vehiculo, string marca, string modelo, string matricula,int id_tipo_vehiculo)
         {
             accesoMetodoCRUDvehiculo accesoVehiculo = new accesoMetodoCRUDvehiculo();
-            return accesoVehiculo.ActualizarVehiculo(id_vehiculo,marca,modelo,matricula);
+            return accesoVehiculo.ActualizarVehiculo(id_vehiculo,marca,modelo,matricula,id_tipo_vehiculo);
         }
 
         //Negociar operación para eliminar

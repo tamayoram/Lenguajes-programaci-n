@@ -27,10 +27,10 @@ namespace Negocio
         }
 
         //Negociar operación para actualizar
-        public int NegociarActualizarConductor(int Id, string nombre,string tipo_licencia)
+        public int NegociarActualizarConductor(int Id, string nombre,string tipo_licencia, int id_vehiculo, int id_tipo_conductor)
         {
             accesoMetodoCRUDconductor accesoConductor = new accesoMetodoCRUDconductor();
-            return accesoConductor.ActualizarConductor(Id, nombre,tipo_licencia);
+            return accesoConductor.ActualizarConductor(Id, nombre,tipo_licencia,id_vehiculo,id_tipo_conductor);
         }
 
         //Negociar operación para eliminar
