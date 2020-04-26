@@ -35,7 +35,7 @@ namespace Modelo.Ruta
         public int ActualizarRuta(int Id, string estacion, int id_vehiculo)
         {
             SqlCommand _comandoRuta = MetodosCRUDRuta.ActualizarRuta();
-            _comandoRuta.Parameters.AddWithValue("Id", Id);
+            _comandoRuta.Parameters.AddWithValue("@Id", Id);
             _comandoRuta.Parameters.AddWithValue("@estacion", estacion);
             _comandoRuta.Parameters.AddWithValue("@id_vehiculo", id_vehiculo);
 

@@ -13,13 +13,20 @@ namespace Transporte
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+
+            if (!Page.IsPostBack)
+            {
+            
             vehiculoContrato_SelectedIndexChanged(sender, e);                                
             vehiculoRuta_SelectedIndexChanged(sender, e);                                      
             conductorContrato_SelectedIndexChanged(sender, e);
             listarContrato_Click(sender, e);
             listarRuta_Click(sender, e);
-            
-         }
+
+            }
+
+
+        }
 
         protected void insertarContrato_Click(object sender, EventArgs e)
         {
@@ -115,11 +122,11 @@ namespace Transporte
         {
             int id_ruta = Int32.Parse(idRuta.Value);
             string descrip_estacion = estacion.Value;
-            int id_veh = int.Parse(vehiculoRuta.Text);
+            int id_vehiculo = int.Parse(vehiculoRuta.Text);
 
 
             LogicaNegocioRuta negocioRuta = new LogicaNegocioRuta();
-            int resultadoRuta = negocioRuta.negociarInsertarRuta(id_ruta, descrip_estacion, id_veh);
+            int resultadoRuta = negocioRuta.negociarInsertarRuta(id_ruta, descrip_estacion, id_vehiculo);
 
             if (resultadoRuta > 0)
 
