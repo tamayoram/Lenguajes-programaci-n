@@ -4,7 +4,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@ViewBag.Title - Gestión Tienda</title>
+    <title>@ViewBag.Title - Store</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
@@ -17,15 +17,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                @Html.ActionLink("Tienda Belen La Mota", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+                @Html.ActionLink("Belen La Mota Store", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
             </div>
             <div class="navbar-collapse collapse">
                 <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
-                    <li>@Html.ActionLink("Ventas", "Index", "Sale")</li>
-                    <li>@Html.ActionLink("Clientes", "Index", "Costumer")</li>
-                    <li>@Html.ActionLink("Productos", "Index", "Product")</li>
-                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("Sales", "Index", "Sale")</li>
+                    <li>@Html.ActionLink("Costumers", "Index", "Costumer")</li>
+                    <li>@Html.ActionLink("Products", "Index", "Product")</li>
+                    <li>@Html.ActionLink("Contact us", "Contact", "Home")</li>
                 </ul>
             </div>
         </div>

@@ -21,7 +21,7 @@ namespace neighborhoodStore.Models
         public TypeSale? TypeSale { get; set; }
         public int Amount { get; set; }
 
-        public virtual Product Products { get; set; } // Conexión con la tabla Product.
-        public virtual Costumer Costumers { get; set; } // Conexión con la tabla Costumers.
+        public virtual Product Product { get; set; } // Conexión con la tabla Product.
+        public virtual Costumer Costumer { get; set; } // Conexión con la tabla Costumers.
     }
 }

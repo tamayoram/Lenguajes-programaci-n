@@ -18,7 +18,7 @@ namespace neighborhoodStore.Controllers
         // GET: Sale
         public ActionResult Index()
         {
-            var sales = db.Sales.Include(s => s.Costumers).Include(s => s.Products);
+            var sales = db.Sales.Include(s => s.Costumer).Include(s => s.Product);
             return View(sales.ToList());
         }
 
@@ -40,7 +40,7 @@ namespace neighborhoodStore.Controllers
         // GET: Sale/Create
         public ActionResult Create()
         {
-            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "FirstName");
+            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "CostumerID");
             ViewBag.ProductID = new SelectList(db.Products, "ProductID", "Description");
             return View();
         }
@@ -59,7 +59,7 @@ namespace neighborhoodStore.Controllers
                 return RedirectToAction("Index");
             }
 
-            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "FirstName", sale.CostumerID);
+            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "CostumerID", sale.CostumerID);
             ViewBag.ProductID = new SelectList(db.Products, "ProductID", "Description", sale.ProductID);
             return View(sale);
         }
@@ -76,7 +76,7 @@ namespace neighborhoodStore.Controllers
             {
                 return HttpNotFound();
             }
-            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "FirstName", sale.CostumerID);
+            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "CostumerID", sale.CostumerID);
             ViewBag.ProductID = new SelectList(db.Products, "ProductID", "Description", sale.ProductID);
             return View(sale);
         }
@@ -94,7 +94,7 @@ namespace neighborhoodStore.Controllers
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "FirstName", sale.CostumerID);
+            ViewBag.CostumerID = new SelectList(db.Costumers, "CostumerID", "CostumerID", sale.CostumerID);
             ViewBag.ProductID = new SelectList(db.Products, "ProductID", "Description", sale.ProductID);
             return View(sale);
         }
